@@ -1,0 +1,11 @@
+C:\Users\Admin\source\repos\Organizer\Organizer\bin\Debug\netcoreapp3.1\Organizer.exe
+C:\Users\Admin\source\repos\Organizer\Organizer\bin\Debug\netcoreapp3.1\Organizer.deps.json
+C:\Users\Admin\source\repos\Organizer\Organizer\bin\Debug\netcoreapp3.1\Organizer.runtimeconfig.json
+C:\Users\Admin\source\repos\Organizer\Organizer\bin\Debug\netcoreapp3.1\Organizer.runtimeconfig.dev.json
+C:\Users\Admin\source\repos\Organizer\Organizer\bin\Debug\netcoreapp3.1\Organizer.dll
+C:\Users\Admin\source\repos\Organizer\Organizer\bin\Debug\netcoreapp3.1\Organizer.pdb
+C:\Users\Admin\source\repos\Organizer\Organizer\obj\Debug\netcoreapp3.1\Organizer.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\Organizer\Organizer\obj\Debug\netcoreapp3.1\Organizer.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\Organizer\Organizer\obj\Debug\netcoreapp3.1\Organizer.AssemblyInfo.cs
+C:\Users\Admin\source\repos\Organizer\Organizer\obj\Debug\netcoreapp3.1\Organizer.dll
+C:\Users\Admin\source\repos\Organizer\Organizer\obj\Debug\netcoreapp3.1\Organizer.pdb
