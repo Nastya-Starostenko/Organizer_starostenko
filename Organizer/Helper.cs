@@ -59,6 +59,8 @@ namespace Organizer
                 {
                     case 1: NotesMenu(); break;
                     case 2: OpenCalculator(); break;
+
+                    case 3: OpenWheather(); break;
                     default:
                         Console.WriteLine("Unknown command"); break;
 
@@ -75,13 +77,24 @@ namespace Organizer
         }
         public void OpenCalculator()
         {
+            System.Diagnostics.Process.Start(Environment.GetEnvironmentVariable("systemroot") + "\\System32\\calc.exe");
+            StartMenu(1);
         }
+
+        public void OpenWheather()
+        {
+           
+            new Wheather().GetWhether();
+            PreviousMenu(2);
+        }
+
         public void NotesMenu()
         {
             Console.Clear();
             FilesStreams fw = new FilesStreams(@"C:\SomeDir\hta2.txt");
             Console.WriteLine("The organizer has the next functions:\n" + "1. Write text to file\n" + "2. Read from file\n"
                 + "3. Go to main menu\n"
+                + "4. Exit\n"
                 + "Please make your choose.");
 
 
@@ -99,26 +112,44 @@ namespace Organizer
                     {
                         Console.Clear();
                         fw.GetTextFromFileAsync();
-                        Console.WriteLine("\nAre you want exit to previous menu? Type anyone or End for exit from program");
-
-                        ConsoleKeyInfo keyInfo = Console.ReadKey(true);
-                        if (keyInfo.Key == ConsoleKey.End)
-                        { Environment.Exit(0); }
-                        else { Console.Clear(); NotesMenu(); }
+                        PreviousMenu(1);
                         break;
                     }
                 case 3: StartMenu(1); break;
+                case 4: Environment.Exit(0); break;
                 default:
                     Console.WriteLine("Unknown command");
                     break;
             }
 
+            
+            
 
         }
+        internal void PreviousMenu(int param)
+        {
+            Console.WriteLine("\nAre you want exit to previous menu? Type anyone or End for exit from program");
 
+            ConsoleKeyInfo keyInfo = Console.ReadKey(true);
+            if (keyInfo.Key == ConsoleKey.End)
+            { Environment.Exit(0); }
+            else { 
+                
+                switch (param)
+                {
+                    case 1: NotesMenu(); break;
+                    case 2: StartMenu(1); break;
+                    default: StartMenu(1); break;
+                }
 
+                }
+            
+        }
     }
 
-}
+
+ }
+
+
 
 
